@@ -1,0 +1,66 @@
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .weather-widget {
+    text-align: center;
+  }
+  .weather-widget__weather-icon {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 9px;
+    height: 100px;
+    width: 100px;
+    opacity: 0.4;
+  }
+  .weather-widget__picture {
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  .weather-widget {
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #4fccf9, #3eecd1);
+    padding: 10px;
+    width: 200px;
+    height: 374px;
+    font-family: 'Wire One', sans-serif;
+    color: white;
+    text-align: center;
+  }
+  .weather-widget__location {
+    font-size: 24px;
+  }
+  
+  .week-forecast {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 0 0 0;
+    margin: 0 -9px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] auto);
+  }
+  .week-forecast__temperature {
+    grid-column: col / span 2;
+  }
+  .week-forecast__current {
+    text-align: center;
+    font-size: 28px;
+  }
+  .week-forecast__week-picture {
+    border-radius: 4px;
+    padding: 3px 7px;
+    /* height: 38px; */
+    width: 40px;
+    opacity: 1;
+  }
+  .week-forecast__week {
+    grid-column: col 3 / span 3;
+  }
+  
